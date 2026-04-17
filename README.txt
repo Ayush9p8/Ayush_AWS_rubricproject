@@ -1,22 +1,23 @@
-Project Title: Static Website Deployment on AWS
+PROJECT TITLE
+Static Website Deployment on AWS
 
 ---
 
-Project Overview:
-This project demonstrates how to deploy a static website using Amazon Web Services (AWS). The website consists of HTML, CSS, JavaScript, and image assets, hosted on Amazon S3 and delivered globally using Amazon CloudFront for improved performance and low latency.
+PROJECT OVERVIEW
+This project demonstrates the deployment of a static website using Amazon Web Services (AWS). The website consists of HTML, CSS, JavaScript, and image assets. It is hosted on Amazon S3 and delivered globally using Amazon CloudFront to achieve low latency and high performance.
 
 ---
 
-Objectives:
+OBJECTIVES
 
 * Deploy a static website using Amazon S3
 * Configure secure public access using IAM policies
-* Improve performance using CloudFront CDN
-* Provide global access via CloudFront endpoint
+* Improve website performance using CloudFront CDN
+* Provide global accessibility via CloudFront endpoint
 
 ---
 
-Services Used:
+SERVICES USED
 
 * Amazon S3 – Static website hosting
 * AWS IAM – Access control and security
@@ -24,37 +25,42 @@ Services Used:
 
 ---
 
-Project Structure:
+PROJECT STRUCTURE
 
 * index.html → Main webpage
 * /css → Stylesheets
 * /vendor → Bootstrap, jQuery, FontAwesome libraries
-* /img → Images used in website (beach.jpg, van image, etc.)
-* /screenshots → All required project screenshots
+* /img → Image assets (e.g., beach.jpg, van image)
+* /screenshots → Project screenshots
 * README.txt → Project documentation
 
 ---
 
-Implementation Steps:
+IMPLEMENTATION STEPS
 
-1. Created an S3 bucket and configured region.
+1. Created an S3 bucket with a unique name and selected region.
 2. Disabled "Block Public Access" to allow website hosting.
 3. Enabled Static Website Hosting:
 
    * Index Document: index.html
-4. Uploaded all project files (HTML, CSS, JS, images).
-5. Applied bucket policy to allow public read access.
-6. Created a CloudFront distribution using S3 as origin.
-7. Successfully deployed and accessed the website via CloudFront.
+4. Uploaded all website files (HTML, CSS, JavaScript, images).
+5. Configured bucket policy to allow public read access.
+6. Created a CloudFront distribution with the S3 bucket as origin.
+7. Deployed the distribution and accessed the website via CloudFront.
 
 ---
+
+ACCESS URLS
+
+S3 Website Endpoint:
+http://static-website-1650a.s3-website-us-east-1.amazonaws.com
 
 CloudFront Endpoint URL:
 https://d2ql5k30n6wefs.cloudfront.net
 
 ---
 
-Screenshots Included:
+SCREENSHOTS INCLUDED
 (All screenshots are available in the /screenshots folder)
 
 * s3.png → S3 bucket creation
@@ -62,14 +68,14 @@ Screenshots Included:
 * static website hosting.png → Hosting enabled
 * s3 bucket all files.png → Files uploaded
 * policy.png → Bucket policy
-* website distribution.png → CloudFront setup
+* website distribution.png → CloudFront distribution setup
 * cloudfront.png → Distribution deployed
 * domain.png → Endpoint URL
 * web app.png → Final website output
 
 ---
 
-Notes:
+NOTES
 
-* All configurations were done using AWS Management Console
-* Website is publicly accessible via CloudFront URL
+* All configurations were performed using the AWS Management Console
+* The website is publicly accessible via the CloudFront endpoint
